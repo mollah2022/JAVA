@@ -12,10 +12,7 @@ class student{
      
     }
     
-     student(student  another ){
-     name = another.name;
-     gender = another.gender;
-     id = another.id;
+     student(student another){
  
     }
     
@@ -28,12 +25,15 @@ class student{
    }
 }
  
- class copy{
+ class copy1{
        
        public static void main(String[] args){
        
          student ob1 = new student("SAJIB","MALE",21225153);
          student ob2 = new student(ob1);
+         ob2.name   = ob1.name;
+         ob2.gender = ob1.gender;
+         ob2.id     = ob1.id;
          ob2.display_information();
 
     }
