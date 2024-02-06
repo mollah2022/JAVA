@@ -1,13 +1,19 @@
-public class main {
-    public int value;
-    public main() {
-        value = 10;
-    }
-    public void displayValue() {
-        System.out.println("The value is: " + value);
-    }
-    public static void main(String[] args) {
-        main obj = new main();
-        obj.displayValue();
-    }
+interface Animal {
+  public void animalSound(); 
+  public void sleep(); 
+}
+class Pig implements Animal {
+  public void animalSound() {
+    System.out.println("The pig says: wee wee");
+  }
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}
+class main {
+  public static void main(String[] args) {
+    Pig myPig = new Pig(); 
+    myPig.animalSound();
+    myPig.sleep();
+  }
 }
