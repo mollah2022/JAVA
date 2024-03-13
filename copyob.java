@@ -1,22 +1,22 @@
-class copy{
+class copyob{
    String name;
    int age;
-   copy(String a,int b){
+   copyob(String a,int b){
         name = a;
         age = b;
      }
-     copy(copy pagol){
-         name = pagol.name;
-         age = pagol.age;
+     copyob(){  
       }
     void display(){
      System.out.println("NAME "+name);
      System.out.println("AGE "+age);
    }
   public static void main(String[] agrs){
-       copy ob1 = new copy("sajib",2122);
+       copyob ob1 = new copyob("sajib",2122);
        ob1.display();
-       copy ob2 = new copy(ob1);
+       copyob ob2 = new copyob();
+       ob2.name = ob1.name;
+       ob2.age = ob1.age;
        ob2.display();
     }
  }
