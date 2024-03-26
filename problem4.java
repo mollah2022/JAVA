@@ -1,15 +1,17 @@
-import java.util.Scanner;
-class problem4{
-   public static void main(String[] args){
-          Scanner input = new Scanner(System.in);
-      int num;
-      num = input.nextInt();
-      int sum=0;
-     while(num>0){
-           int temp = num%10;
-            sum = sum+temp;
-           num = num/10;
-       }
-       System.out.println("RESULT : "+sum);
-   }
+public class problem4{
+    public static void main(String[] args) {
+    System.out.println("String[] args");
+    main("");
+    main(2,3);
+    main();
+    }
+    public static void main(String args ){
+    System.out.println("String args");
+    }
+    public static void main(int a,int b){
+     System.out.println("with Parameter");
+    }
+    public static void main(){
+     System.out.println("Without Parameter");
+    }
  }

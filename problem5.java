@@ -1,15 +1,12 @@
-import java.util.Scanner;
-class problem5{
-   public static void main(String[] args){
-          Scanner input = new Scanner(System.in);
-      int num;
-      num = input.nextInt();
-      int sum=0;
-     while(num>0){
-           int temp = num%10;
-            sum = sum*10+temp;
-           num = num/10;
-       }
-       System.out.println("REVERSE : "+sum);
-   }
- }
+public class problem5 {
+public static void method(int integer){
+System.out.println("Promoted to Integer : " +integer);
+}
+public static void method(double doublee){
+System.out.println("Promoted to Double : " + doublee);
+}
+public static void main(String[] args) {
+method(2024);
+method(152.0f);
+}
+} 

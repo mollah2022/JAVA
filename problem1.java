@@ -1,15 +1,17 @@
-import java.util.Scanner;
 class problem1{
-   public static void main(String[] args){
-          Scanner input = new Scanner(System.in);
-      int num1,num2;
-      num1 = input.nextInt();
-      num2 = input.nextInt();
-      int sum = (num1+num2);
-      int mul = (num1+num2);
-      double div = (num1/num2);   
-      System.out.println("SUM : "+sum);
-      System.out.println("MUL : "+mul);
-      System.out.println("DIV : "+div);
-   }
+    void Student_Info(String Name,int age){
+    System.out.println("Name : " + Name);
+    System.out.println("Age : " + age);
+    }
+    void Student_Info(String Name,int age,int Intake){
+        System.out.println("Name : " + Name);
+        System.out.println("Age : " + age);
+        System.out.println("Intake : " + Intake);
+
+  }
+    public static void main(String[] args) {
+    problem1 p1=new problem1();
+    p1.Student_Info("Sajib Ahmed",32);
+    p1.Student_Info("Sajib Ahmed",32,49);
+    }
  }
