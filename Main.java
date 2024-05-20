@@ -1,14 +1,18 @@
-interface Polygon {
-  void getArea(int length, int breadth);
-}
-class Rectangle implements Polygon {
-  public void getArea(int length, int breadth) {
-    System.out.println("The area of the rectangle is " + (length * breadth));
-  }
-}
-class Main {
-  public static void main(String[] args) {
-    Rectangle r1 = new Rectangle();
-    r1.getArea(5, 6);
-  }
+
+package brickbreaker;
+
+import javax.swing.JFrame;
+
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame obj = new JFrame();
+	Gameplay gameplay = new Gameplay();
+        obj.setBounds(10, 10, 700, 600);
+        obj.setTitle("Breakout Ball");
+        obj.setResizable(false);
+        obj.setVisible(true);
+        obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        obj.add(gameplay);
+	}
 }
